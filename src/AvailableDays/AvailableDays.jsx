@@ -21,9 +21,9 @@ function AvailableDays({days,time}) {
         <Modal.Body>
          {
             days?.map((item)=>(
-                <div>
+                <div key={item}>
                     <h4 style={{color:'green'}}>{item}</h4>
-                    <h5 style={{color:'orange'}}>{time}</h5>
+                    <h5 key={time} style={{color:'orange'}}>{time}</h5>
                 </div>
             ))
          }

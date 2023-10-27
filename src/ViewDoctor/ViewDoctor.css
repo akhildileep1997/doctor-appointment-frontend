@@ -28,3 +28,6 @@
  border-radius: 20px;
  color: black;
 }
+.li:hover{
+ cursor: pointer;
+}

@@ -41,8 +41,8 @@ function ViewDoctor() {
       <ListGroup.Item as="li" >Email : {doctor.email}</ListGroup.Item>
       <ListGroup.Item as="li">Phone No : {doctor.phone}</ListGroup.Item>
       <ListGroup.Item as="li"><i style={{color:'gold'}} className="fa-solid fa-star me-3"></i>  {doctor.rating}</ListGroup.Item>
-      <ListGroup.Item as="li"> <AvailableDays days={doctor.available_days} time={doctor.available_hours}  /> </ListGroup.Item>
-      <ListGroup.Item as="li"> <DoctorReview review = {doctor.reviews} /> </ListGroup.Item>
+      <ListGroup.Item as="li" className='li'> <AvailableDays days={doctor.available_days} time={doctor.available_hours}  /> </ListGroup.Item>
+      <ListGroup.Item as="li" className='li'> <DoctorReview review = {doctor.reviews} /> </ListGroup.Item>
         </ListGroup>
       </div>
       </div>

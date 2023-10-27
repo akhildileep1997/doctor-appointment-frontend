@@ -11,7 +11,7 @@ function DoctorReview({review,name, ...props }) {
   return (
     <div>
         <h5 variant="primary" onClick={handleShow} className="me-2">
-        {name} Review  <i style={{color:'green'}} class="fa-solid fa-hand-point-left ms-3"></i>
+        {name} Review  <i style={{color:'green'}} className="fa-solid fa-hand-point-left ms-3"></i>
       </h5>
       <Offcanvas style={{height:'700px',width:'500px'}} placement='end' show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
@@ -20,12 +20,12 @@ function DoctorReview({review,name, ...props }) {
         <Offcanvas.Body>
           {
             review?.map((item)=>(
-            <div className='main'>
-             <div className="review">
-             <h3>Name: {item.patient_name}</h3>
-             <h6>Date : {item.date} </h6>
-             <h5><i style={{color:'gold'}} className="fa-solid fa-star me-3"></i> : {item.rating} </h5>
-             <p> {item.comments} </p>
+            <div key={item} className='main'>
+             <div  className="review">
+             <h3 key={item.patient_name}>Name: {item.patient_name}</h3>
+             <h6 key={item.date}>Date : {item.date} </h6>
+             <h5 key={item.rating}><i style={{color:'gold'}} className="fa-solid fa-star me-3"></i> : {item.rating} </h5>
+             <p key={item.comments}> {item.comments} </p>
              </div>
             </div>
 

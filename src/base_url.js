@@ -1,1 +1,1 @@
-export const base_url = "https://doctor-appointment-backend-h78i.onrender.com"
+export const base_url = "http://localhost:3001"

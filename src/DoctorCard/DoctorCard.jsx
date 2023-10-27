@@ -7,7 +7,7 @@ function DoctorCard({doctors}) {
     console.log(doctors);
   return (
     <div>
-      <Card className='card' style={{ width: '18rem' }}>
+      <Card className='card' style={{ width: '18rem' ,height:'490px'}}>
       <Card.Img variant="top" src={doctors.image_url} className='image text-center' />
       <Card.Body>
         <Card.Title style={{fontWeight:'800'}}>{doctors.name}</Card.Title>
