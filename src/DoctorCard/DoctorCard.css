@@ -20,4 +20,5 @@
 .card:hover .image{
     transform: scale(1);
     border: 2px solid white;
+    filter: brightness(0) invert(1);
 }
